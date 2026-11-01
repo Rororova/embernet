@@ -20,6 +20,10 @@ Start-EMBERNET.cmd
 ```
 
 ## Deck
+- Presentation Deck: 
+
+[![PowerPoint Presentation](https://shields.io)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fhackcultureplatform.blob.core.windows.net%2Fevent-assets%2Fhackathons%2F6aa802789f615151bbd17304%2Fsubmissions%2F6ad4e8d5debcf31a828ecdd8%2Fsubmission_duby5gj2u8t.pptx)
+
 
 - Live Hosted Link: https://ieirodov14--embernet-live-gateway.us-east.modal.run/
 - Product Demo Video: https://drive.google.com/file/d/1oqAKpcZ8nhyMgXUtHU0b4C1HXLuV_iul/view?usp=sharing
