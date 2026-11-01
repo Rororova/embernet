@@ -6,7 +6,9 @@ Each one keeps its own ledger, shares evidence over a lossy radio mesh, negotiat
 responds, and keeps working when the mesh breaks.
 
 **Live demo: <https://ieirodov14--embernet-live-gateway.us-east.modal.run>**
-[![Watch the EMBERNET demo video](https://drive.google.com/thumbnail?id=FILE_ID&sz=w1280)](https://drive.google.com/file/d/FILE_ID/view)
+[![Watch the EMBERNET demo video](https://drive.google.com/thumbnail?id=1oqAKpcZ8nhyMgXUtHU0b4C1HXLuV_iul&sz=w1280)](https://drive.google.com/file/d/1oqAKpcZ8nhyMgXUtHU0b4C1HXLuV_iul/view)
+
+**[▶ Watch the demo video](https://drive.google.com/file/d/1oqAKpcZ8nhyMgXUtHU0b4C1HXLuV_iul/view)**
 
 > [!IMPORTANT]
 > **Visit the demo. Do not run EMBERNET locally until you have finished the
