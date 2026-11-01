@@ -26,7 +26,7 @@ Start-EMBERNET.cmd
 
 
 - Live Hosted Link: https://ieirodov14--embernet-live-gateway.us-east.modal.run/
-- Product Demo Video: https://drive.google.com/file/d/1oqAKpcZ8nhyMgXUtHU0b4C1HXLuV_iul/view?usp=sharing
+- A short film about embernet: https://drive.google.com/file/d/1oqAKpcZ8nhyMgXUtHU0b4C1HXLuV_iul/view?usp=sharing
 
 ## What is included
 
