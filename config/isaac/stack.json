@@ -1,0 +1,21 @@
+{
+  "isaac_sim": "6.2.0.0",
+  "python": "3.12",
+  "pegasus_tag": "v5.1.0",
+  "px4_tag": "v1.14.3",
+  "asset_root": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1",
+  "nvidia_quadcopter": "Isaac/Robots/IsaacSim/Quadcopter/quadcopter.usd",
+  "ground": "Isaac/Environments/Terrains/flat_plane.usd",
+  "cloud": {
+    "gpu": "L40S",
+    "max_containers": 1,
+    "runtime_timeout_seconds": 900,
+    "retries": 0
+  },
+  "license_acceptance": "Explicit user consent required before Isaac runtime import; never silently default to YES",
+  "status": "Isaac 6.2 boot, rotor flight/disturbance, RGB/depth and three-agent policy/radio-outage trials verified",
+  "flight_backend": "Native PhysX rotor-wrench trial; Pegasus path reserved for 5.1",
+  "legacy_isaac": "5.1.0 (RTX initialization failed on Modal driver 610.57.04)",
+  "pegasus_commit": "644da37e9d5268e5f9a34e78bdcfd57a8bab82b4",
+  "px4_status": "Not installed or running"
+}

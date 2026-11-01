@@ -1,0 +1,26 @@
+Create a very simple technical architecture diagram for EMBERNET.
+Strict visual style: pure white background, black text, thin black rectangular outlines, thin black arrows. No color, gray fills, gradients, shadows, decorative elements, icons, illustrations, photographs, drones, simulated worlds, scenery, logos, or 3D. Minimal engineering block diagram. Large readable plain sans-serif text. Landscape 16:9. Generous white space. Only architecture.
+
+Title: "EMBERNET Architecture"
+
+Main central group: a plain outlined container labeled "Per-drone autonomy (repeated on each drone)".
+Inside, a clean left-to-right flow of six simple boxes:
+"Local state and observations" → "Incident memory" → "Task policy" → "Coordination" → "Independent safety" → "Navigation targets".
+A smaller box above "Task policy" labeled "Offline training" with arrow to Task policy labeled "checkpoint".
+A single shared communication box above the central container labeled "Peer mesh" with a bidirectional arrow ONLY to Coordination. Small text inside Peer mesh: "Reports, bids, awards, acknowledgements". A thin incoming arrow from Peer mesh to Incident memory labeled "delivered reports". This is peer-to-peer communication, not a centralized controller.
+Beneath the main central container, a compact feedback path:
+"Navigation targets" connects to "PX4 SITL" → "Isaac PhysX".
+Return arrow Isaac PhysX → PX4 SITL labeled "HIL sensors".
+Return arrow from Isaac PhysX to Local state and observations labeled "measured state". Keep arrows outside boxes without intersections.
+Small unboxed text under main group: "Actor uses only local observations and delivered messages."
+
+Below this use two separate horizontal rows with ample separation:
+"Observation" row: "RGB / synthetic IR" → "Streaming gateway" → "Browser UI".
+"Separate perception review" row: "Real images" → "YOLO / ONNX" → "Review UI".
+Do not connect separate perception review to drone autonomy. Do not connect observation video to city discovery.
+
+Bottom in small plain black text, exactly two lines:
+"City camera discovery and virtual suppression feedback remain unfinished."
+"Physical actuation disabled."
+
+Keep text sparse and exact. No extra explanatory paragraphs, examples, feature lists, metrics, or invented blocks. Do not show a simulated world. Professional clean monochrome flowchart, visually simple enough to read immediately.

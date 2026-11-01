@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#111b22" />
+    <title>EMBERNET · Recorded observations</title>
+    <link rel="stylesheet" href="/ui/style.css" />
+    <link rel="stylesheet" href="/ui/perception.css" />
+  </head>
+  <body>
+    <main class="evidence-shell">
+      <header class="evidence-header">
+        <a class="wordmark" href="/">EMBERNET<span>SWARM FIELD LAB</span></a>
+        <nav aria-label="Project views">
+          <a href="/">Interactive swarm</a
+          ><a href="/perception" aria-current="page">Recorded observations</a>
+        </nav>
+        <span class="source-badge">FLAME 3 / REAL AERIAL IMAGERY</span>
+      </header>
+      <section class="evidence-intro">
+        <div>
+          <h1>See the evidence.</h1>
+          <p>
+            Sycan Marsh, Oregon. Pretrained RGB detection and original
+            radiometric measurements,<br class="desktop-break" />
+            inspected side by side.
+          </p>
+        </div>
+        <div class="model-summary">
+          <span>FIRE + SMOKE / YOLOv8n</span
+          ><strong>3.01M <small>parameters</small></strong
+          ><span>Local CPU inference · pinned checkpoint</span>
+        </div>
+      </section>
+      <div id="review-error" role="alert" hidden></div>
+      <div id="review-content" hidden>
+        <div class="review-layout">
+          <aside class="sample-panel" aria-label="Recorded samples">
+            <div class="section-label">
+              <h2>Observations</h2>
+              <span id="sample-count"></span>
+            </div>
+            <label class="sample-filter"
+              >Show<select id="sample-filter">
+                <option value="all">All samples</option>
+                <option value="Fire">Source: fire</option>
+                <option value="No Fire">Source: no fire</option>
+                <option value="missed">RGB misses</option>
+              </select></label
+            >
+            <div id="sample-list"></div>
+          </aside>
+          <section class="frame-panel" aria-labelledby="frame-title">
+            <div class="frame-toolbar">
+              <div>
+                <span
+                  class="eyebrow"
+                  id="sample-position"
+                  role="status"
+                  aria-live="polite"
+                ></span>
+                <h2 id="frame-title"></h2>
+              </div>
+              <div class="frame-actions">
+                <button id="previous" aria-label="Previous observation">
+                  ←</button
+                ><button id="next" aria-label="Next observation">→</button>
+              </div>
+            </div>
+            <div class="image-pair">
+              <figure>
+                <figcaption>
+                  <span>RGB / MODEL DETECTIONS</span
+                  ><span id="frame-size"></span>
+                </figcaption>
+                <img
+                  id="observation-rgb"
+                  alt="Recorded aerial RGB image with pretrained fire and smoke detections"
+                />
+                <div class="image-foot">
+                  <span
+                    ><i class="fire-dot"></i> Fire
+                    <i class="smoke-dot"></i> Smoke</span
+                  ><a id="original-rgb" target="_blank" rel="noopener"
+                    >Open original ↗</a
+                  >
+                </div>
+              </figure>
+              <figure>
+                <figcaption>
+                  <span>THERMAL / SOURCE TIFF</span><span>CELSIUS</span>
+                </figcaption>
+                <img
+                  id="observation-thermal"
+                  alt="Temperature visualization generated from the paired radiometric TIFF"
+                />
+                <div class="temperature-key">
+                  <span>10°C</span>
+                  <div></div>
+                  <span>150°C+</span>
+                </div>
+              </figure>
+            </div>
+            <div class="observation-stats">
+              <div>
+                <span>RGB observation</span
+                ><strong id="fire-confidence"></strong
+                ><small>Highest retained detection</small>
+              </div>
+              <div>
+                <span>Maximum temperature</span
+                ><strong id="temperature-max"></strong
+                ><small>Original radiometric measurement</small>
+              </div>
+              <div>
+                <span>Area above 100°C</span><strong id="hot-fraction"></strong
+                ><small>Fraction of valid thermal pixels</small>
+              </div>
+              <div>
+                <span>Processing time</span
+                ><strong id="inference-latency"></strong
+                ><small>RGB preprocessing + inference + NMS</small>
+              </div>
+            </div>
+            <div class="evidence-notes">
+              <div>
+                <h3>Observation details</h3>
+                <p id="observation-details"></p>
+                <p class="muted">
+                  RGB and thermal may retain up to ~20 pixels of registration
+                  error. The thermal preview clips its display range;
+                  measurements retain the source values.
+                </p>
+              </div>
+              <div>
+                <h3>Detections</h3>
+                <div id="detection-list"></div>
+              </div>
+            </div>
+          </section>
+          <p id="no-matches" class="empty-observations" role="status" hidden>
+            No samples match this filter.
+          </p>
+        </div>
+        <section class="benchmark-section">
+          <div>
+            <h2>What the sample actually shows</h2>
+            <p>
+              Fixed defaults on 24 fire and 24 no-fire source labels from one
+              prescribed burn. No training or threshold tuning on these samples.
+            </p>
+            <p class="muted">
+              Source folder labels support image-level checks. They do not
+              establish bounding-box accuracy, calibrated severity or cross-burn
+              generalization. Thermal agreement may reflect how the source
+              labels were made.
+            </p>
+            <p id="flame-only-note"></p>
+          </div>
+          <div class="benchmark-table">
+            <table>
+              <caption>
+                Fire-or-smoke warnings versus source fire labels
+              </caption>
+              <thead>
+                <tr>
+                  <th>Measure</th>
+                  <th>RGB warning</th>
+                  <th>Thermal threshold¹</th>
+                </tr>
+              </thead>
+              <tbody id="benchmark-rows"></tbody>
+            </table>
+            <p>
+              ¹ At least 0.05% of valid thermal pixels ≥100°C. An inspectable
+              baseline, not a calibrated incident-severity measure.
+            </p>
+          </div>
+        </section>
+        <details class="provenance">
+          <summary>Source, model and reproducibility</summary>
+          <div id="provenance-details"></div>
+          <p>
+            <a
+              href="https://www.kaggle.com/datasets/brycehopkins/flame-3-computer-vision-subset-sycan-marsh/versions/1"
+              target="_blank"
+              rel="noopener"
+              >FLAME 3 dataset / Bryce Hopkins et al. ↗</a
+            >
+            ·
+            <a
+              href="https://huggingface.co/rabahdev/fire-smoke-yolov8n"
+              target="_blank"
+              rel="noopener"
+              >Model card / rabahdev ↗</a
+            >
+            · <a href="/api/perception" download="EMBERNET-perception-results.json">Download results JSON</a>
+          </p>
+        </details>
+      </div>
+      <footer class="evidence-footer">
+        <span>EMBERNET / Recorded evidence review</span
+        ><span>Independent samples · Capture sequence not verified</span>
+      </footer>
+    </main>
+    <script type="module" src="/ui/perception.js?v=2"></script>
+  </body>
+</html>

@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#142128" />
+    <title>EMBERNET · Mission control</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/ui/vendor/three.module.js",
+          "three/addons/": "/ui/vendor/addons/"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/ui/style.css" />
+    <link rel="stylesheet" href="/ui/scene.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="controls" aria-label="Mission controls">
+        <a class="brand" href="/" aria-label="EMBERNET home"
+          ><svg viewBox="0 0 40 44" aria-hidden="true">
+            <path
+              d="M20 3 35 12v19L20 40 5 31V12Z M5 12l15 9 15-9M20 21v19M12 17v9l8 5 8-5v-9"
+            /></svg
+          ><span
+            >EMBERNET<span class="brand-note">SWARM FIELD LAB</span></span
+          ></a
+        >
+        <div class="mission-name">
+          <span class="status-dot"></span> Forest response
+          <span class="muted">/ 41</span>
+        </div>
+        <section class="control-section">
+          <h2>Mission</h2>
+          <label class="field"
+            >Scenario seed<input
+              id="seed"
+              type="number"
+              value="41"
+              min="0"
+              max="1000000"
+          /></label>
+          <label class="field"
+            >Aircraft<select id="fleet">
+              <option>4</option>
+              <option selected>6</option>
+              <option>8</option>
+              <option>12</option>
+            </select></label
+          >
+          <label class="field"
+            >Perception<select id="sensor">
+              <option value="reference">Reference sensor</option>
+              <option value="learned" disabled>Neural RGB + thermal</option>
+            </select></label
+          >
+          <label class="field"
+            >Decisions<select id="policy">
+              <option value="baseline">Rule-based baseline</option>
+              <option value="learned" disabled>Learned mission policy</option>
+            </select></label
+          >
+          <button id="reset" class="secondary wide">Reset with settings</button>
+        </section>
+        <section class="control-section">
+          <h2>Introduce an incident</h2>
+          <p class="hint">Choose a tool, then place it on the map.</p>
+          <div class="tools">
+            <button data-tool="fire" aria-pressed="false">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M13 3c0 5-7 6-7 12a6 6 0 0 0 12 0c0-3-2-5-3-6 0 4-2 4-2 4S10 9 13 3Z"
+                /></svg
+              >Fire</button
+            ><button data-tool="person" aria-pressed="false">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="5" r="2" />
+                <path d="M7 12l5-4 5 4M12 8v7m0 0-4 6m4-6 4 6" /></svg
+              >Person</button
+            ><button data-tool="animal" aria-pressed="false">
+              <svg viewBox="0 0 24 24">
+                <path d="m4 9 3 3h9l3-5 2 3-3 5v6m-4-6v6M7 12v9M4 9 2 6" /></svg
+              >Animal
+            </button>
+          </div>
+          <label class="field range-label"
+            >Fire severity <output id="severity-value">0.60</output
+            ><input
+              id="severity"
+              type="range"
+              min=".1"
+              max="1"
+              step=".05"
+              value=".6"
+          /></label>
+          <div class="coordinates">
+            <label
+              >X / m<input
+                id="coord-x"
+                type="number"
+                min="0"
+                max="320"
+                value="160" /></label
+            ><label
+              >Y / m<input
+                id="coord-y"
+                type="number"
+                min="0"
+                max="320"
+                value="160"
+            /></label>
+          </div>
+          <button id="add-coordinate" class="secondary wide">
+            Add fire at coordinates
+          </button>
+        </section>
+        <section class="control-section">
+          <h2>Mesh conditions</h2>
+          <label class="switch-row"
+            ><span>Radio mesh</span
+            ><input type="checkbox" id="mesh" checked role="switch" /></label
+          ><label class="field range-label"
+            >Packet loss <output id="loss-value">8%</output
+            ><input
+              id="loss"
+              type="range"
+              min="0"
+              max="1"
+              step=".05"
+              value=".08"
+          /></label>
+        </section>
+        <div class="sidebar-bottom">
+          <a href="/api/export/rrd" download>Save 3D recording <span>↗</span></a
+          ><a href="/api/export/replay" download
+            >Export mission replay <span>↗</span></a
+          >
+          <p>Simulation only<br />Physical actuation disabled</p>
+        </div>
+      </aside>
+      <main>
+        <header class="topbar">
+          <button
+            id="panel-toggle"
+            class="panel-toggle"
+            aria-label="Show mission settings"
+            aria-expanded="false"
+          >
+            <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+          <div>
+            <h1>EMBERNET</h1>
+            <p id="run-description">Seed 41 · 6 aircraft · Synthetic forest</p>
+          </div>
+          <div class="mission-clock">
+            <span id="run-status">READY</span><strong id="clock">00:00</strong>
+          </div>
+          <div class="run-actions">
+            <a class="evidence-link" href="/perception">Real observations ↗</a>
+            <label class="speed-label"
+              >Speed<select id="speed" aria-label="Simulation speed">
+                <option value="1">1×</option>
+                <option value="2" selected>2×</option>
+                <option value="4">4×</option>
+                <option value="8">8×</option>
+              </select></label
+            ><button id="launch" class="primary">
+              <svg viewBox="0 0 20 20"><path d="m6 3 11 7-11 7Z" /></svg
+              ><span>Launch swarm</span>
+            </button>
+          </div>
+        </header>
+        <div id="error" role="alert" hidden></div>
+        <div class="overview">
+          <div>
+            <span class="metric-label">Active fires</span
+            ><strong id="active-fires">02</strong>
+          </div>
+          <div>
+            <span class="metric-label">Contained</span
+            ><strong id="contained">00</strong>
+          </div>
+          <div>
+            <span class="metric-label">People reached</span
+            ><strong id="people">00</strong>
+          </div>
+          <div>
+            <span class="metric-label">Agent used</span
+            ><strong><span id="water">0.0</span><small> L</small></strong>
+          </div>
+          <div class="coverage-note">
+            <span class="status-dot"></span
+            ><span id="mode-note"
+              >Reference detections · baseline decisions</span
+            >
+          </div>
+        </div>
+        <div class="workspace">
+          <section class="map-panel" aria-label="Tactical forest map">
+            <div class="panel-head">
+              <h2>Forest response <span>320 × 320 m sector</span></h2>
+              <div class="camera-controls" aria-label="Scene camera">
+                <button data-camera="orbit" aria-pressed="true">Overview</button
+                ><button data-camera="follow" aria-pressed="false">
+                  Follow drone</button
+                ><button data-camera="pov" aria-pressed="false">
+                  Scene POV
+                </button>
+              </div>
+              <div class="map-toggles">
+                <label><input type="checkbox" id="show-mesh" />Mesh</label
+                ><label
+                  ><input type="checkbox" id="show-sensors" />Sensors</label
+                ><label
+                  ><input type="checkbox" id="show-truth" checked />Truth</label
+                >
+              </div>
+            </div>
+            <div class="map-wrap">
+              <canvas
+                id="map"
+                tabindex="0"
+                aria-label="Live 3D forest simulation. Drag to orbit, scroll to zoom. Select aircraft with fleet buttons."
+              ></canvas>
+              <div id="scene-loading" role="status">
+                Loading forest and aircraft geometry…
+              </div>
+              <div class="scene-tools">
+                <span id="render-status">LIVE 3D</span
+                ><button id="scene-expand">Focus view</button>
+              </div>
+              <div class="map-caption">
+                <span id="map-instruction"
+                  >SELECT AN AIRCRAFT TO INSPECT ITS KNOWLEDGE</span
+                ><span class="north"
+                  ><svg viewBox="0 0 20 24">
+                    <path d="m10 2-6 15 6-3 6 3Z" /></svg
+                  >N</span
+                >
+              </div>
+              <div class="map-legend">
+                <span><i class="legend-drone"></i>Aircraft</span
+                ><span><i class="legend-fire"></i>Fire</span
+                ><span><i class="legend-person"></i>Person</span
+                ><span class="truth-label">Simulator truth visible</span>
+              </div>
+              <div class="scene-help">
+                Drag to orbit · Scroll to zoom · Click an aircraft to inspect
+              </div>
+            </div>
+            <div class="map-footer">
+              <span id="mesh-summary">Mesh ready</span
+              ><span id="packet-summary">No packets sent</span>
+            </div>
+          </section>
+          <aside class="incident-panel">
+            <div class="panel-head">
+              <h2>Incident ledger</h2>
+              <span class="count" id="incident-count">0</span>
+            </div>
+            <p class="panel-description" id="ledger-description">
+              E01’s local knowledge. Updated by its sensors and delivered
+              reports.
+            </p>
+            <div id="incidents" class="incident-list">
+              <div class="empty">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="24" cy="24" r="16" />
+                  <path d="M24 14v10l7 5M7 7l5 5m24 24 5 5" />
+                </svg>
+                <h3>Awaiting observations</h3>
+                <p>
+                  Launch the swarm to begin searching. An incident appears here
+                  when this aircraft sees it or receives a report.
+                </p>
+              </div>
+            </div>
+            <div class="ledger-note">
+              Deferred incidents stay in memory and are reviewed as conditions
+              change.
+            </div>
+          </aside>
+          <section class="aircraft-panel">
+            <div class="panel-head">
+              <h2>Aircraft</h2>
+              <span>Select to inspect</span>
+            </div>
+            <div id="fleet-list" class="fleet-list"></div>
+            <div class="aircraft-detail">
+              <div class="selected-heading">
+                <h3 id="selected-name">E01</h3>
+                <span id="selected-task" class="task-tag">SEARCH</span
+                ><button id="isolate" class="text-button">Isolate radio</button>
+              </div>
+              <p id="decision-reason">Ready to launch</p>
+              <div class="resource-grid">
+                <div>
+                  <span>Battery</span><strong id="battery">100%</strong
+                  ><meter id="battery-meter" min="0" max="1" value="1"></meter>
+                </div>
+                <div>
+                  <span>Agent</span><strong id="tank">18.0 L</strong
+                  ><meter id="water-meter" min="0" max="18" value="18"></meter>
+                </div>
+                <div>
+                  <span>Peers heard</span><strong id="peers">0</strong
+                  ><span id="altitude" class="muted">0 m AGL</span>
+                </div>
+              </div>
+              <div class="camera-pair">
+                <figure>
+                  <img
+                    id="rgb"
+                    src="/api/camera/E01/rgb"
+                    alt="Selected drone’s synthetic RGB camera"
+                  />
+                  <figcaption>MODEL RGB INPUT</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    id="thermal"
+                    src="/api/camera/E01/thermal"
+                    alt="Selected drone’s synthetic thermal camera"
+                  />
+                  <figcaption>MODEL IR INPUT</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+          <section class="event-panel">
+            <div class="panel-head">
+              <h2>Decision log</h2>
+              <span>Observed events, not generated explanations</span>
+            </div>
+            <div id="event-log" class="event-log">
+              <p class="event-empty">
+                The mission is ready. Launch the swarm to record its first
+                decisions.
+              </p>
+            </div>
+          </section>
+        </div>
+        <footer class="app-footer">
+          <span>EMBERNET / Research simulation</span
+          ><span id="recording-status">Rerun recording ready</span
+          ><span>Person reached ≠ rescued · Ground rescue required</span>
+        </footer>
+      </main>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/ui/app.js"></script>
+  </body>
+</html>

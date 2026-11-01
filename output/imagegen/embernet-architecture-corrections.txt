@@ -1,0 +1,7 @@
+Edit this EMBERNET architecture diagram. Preserve its layout, illustrations, colors, dimensions, all correct text and diagram structure. Make only these exact text corrections:
+1. In bottom-left of SIMULATED WORLD under "Browser • kinematic", replace "Web-based 3D city" with "Web-based 3D forest".
+2. In bottom-left OFFLINE TRAINING & EVIDENCE, replace "Train task policy from logged data (outside runtime)" with "Offline simulation training and saved evidence". Replace "Domain randomization (simulated city)" with "Simulation training / evaluation".
+3. In upper-right flight-loop return arrow, replace "(imu, gps, baro, camera, etc.)" with "(IMU, GPS, barometer)".
+4. In lower-right OPEN MISSION CONNECTIONS, replace "Planned extensions (not implemented)" with "Unfinished city mission integration".
+5. Lower-right observer pipeline encoding label must read "RGB: NVENC H.264 / WSS" with a small second line "IR: JPEG / WSS", because only RGB is H.264; preserve RGB and synthetic IR thumbnails.
+Do not change any other content or add technical claims. Crisp readable typography.

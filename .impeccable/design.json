@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T13:42:09.420180+00:00",
+  "title": "Design System: EMBERNET Mission Control",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Deep slate",
+        "tonalRamp": [
+          "oklch(15.00% 0.0200 239.39)",
+          "oklch(26.43% 0.0200 239.39)",
+          "oklch(37.86% 0.0200 239.39)",
+          "oklch(49.29% 0.0200 239.39)",
+          "oklch(60.71% 0.0200 239.39)",
+          "oklch(72.14% 0.0200 239.39)",
+          "oklch(83.57% 0.0200 239.39)",
+          "oklch(95.00% 0.0200 239.39)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Slate panel",
+        "tonalRamp": [
+          "oklch(15.00% 0.0244 234.06)",
+          "oklch(26.43% 0.0244 234.06)",
+          "oklch(37.86% 0.0244 234.06)",
+          "oklch(49.29% 0.0244 234.06)",
+          "oklch(60.71% 0.0244 234.06)",
+          "oklch(72.14% 0.0244 234.06)",
+          "oklch(83.57% 0.0244 234.06)",
+          "oklch(95.00% 0.0244 234.06)"
+        ]
+      },
+      "panel2": {
+        "role": "neutral",
+        "displayName": "Raised slate",
+        "tonalRamp": [
+          "oklch(15.00% 0.0268 229.01)",
+          "oklch(26.43% 0.0268 229.01)",
+          "oklch(37.86% 0.0268 229.01)",
+          "oklch(49.29% 0.0268 229.01)",
+          "oklch(60.71% 0.0268 229.01)",
+          "oklch(72.14% 0.0268 229.01)",
+          "oklch(83.57% 0.0268 229.01)",
+          "oklch(95.00% 0.0268 229.01)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Slate divider",
+        "tonalRamp": [
+          "oklch(15.00% 0.0277 225.77)",
+          "oklch(26.43% 0.0277 225.77)",
+          "oklch(37.86% 0.0277 225.77)",
+          "oklch(49.29% 0.0277 225.77)",
+          "oklch(60.71% 0.0277 225.77)",
+          "oklch(72.14% 0.0277 225.77)",
+          "oklch(83.57% 0.0277 225.77)",
+          "oklch(95.00% 0.0277 225.77)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Warm chalk",
+        "tonalRamp": [
+          "oklch(15.00% 0.0083 121.64)",
+          "oklch(26.43% 0.0083 121.64)",
+          "oklch(37.86% 0.0083 121.64)",
+          "oklch(49.29% 0.0083 121.64)",
+          "oklch(60.71% 0.0083 121.64)",
+          "oklch(72.14% 0.0083 121.64)",
+          "oklch(83.57% 0.0083 121.64)",
+          "oklch(95.00% 0.0083 121.64)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted mineral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0243 220.81)",
+          "oklch(26.43% 0.0243 220.81)",
+          "oklch(37.86% 0.0243 220.81)",
+          "oklch(49.29% 0.0243 220.81)",
+          "oklch(60.71% 0.0243 220.81)",
+          "oklch(72.14% 0.0243 220.81)",
+          "oklch(83.57% 0.0243 220.81)",
+          "oklch(95.00% 0.0243 220.81)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Copper",
+        "tonalRamp": [
+          "oklch(15.00% 0.1115 58.92)",
+          "oklch(26.43% 0.1115 58.92)",
+          "oklch(37.86% 0.1115 58.92)",
+          "oklch(49.29% 0.1115 58.92)",
+          "oklch(60.71% 0.1115 58.92)",
+          "oklch(72.14% 0.1115 58.92)",
+          "oklch(83.57% 0.1115 58.92)",
+          "oklch(95.00% 0.1115 58.92)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Pale sage",
+        "tonalRamp": [
+          "oklch(15.00% 0.0580 140.28)",
+          "oklch(26.43% 0.0580 140.28)",
+          "oklch(37.86% 0.0580 140.28)",
+          "oklch(49.29% 0.0580 140.28)",
+          "oklch(60.71% 0.0580 140.28)",
+          "oklch(72.14% 0.0580 140.28)",
+          "oklch(83.57% 0.0580 140.28)",
+          "oklch(95.00% 0.0580 140.28)"
+        ]
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "Mineral blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.0543 227.47)",
+          "oklch(26.43% 0.0543 227.47)",
+          "oklch(37.86% 0.0543 227.47)",
+          "oklch(49.29% 0.0543 227.47)",
+          "oklch(60.71% 0.0543 227.47)",
+          "oklch(72.14% 0.0543 227.47)",
+          "oklch(83.57% 0.0543 227.47)",
+          "oklch(95.00% 0.0543 227.47)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Mission heading",
+        "purpose": "Primary page heading."
+      },
+      "title": {
+        "displayName": "Panel title",
+        "purpose": "Instrumentation hierarchy."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Controls and prose."
+      },
+      "metric": {
+        "displayName": "Telemetry",
+        "purpose": "Exact quantities and clocks."
+      }
+    },
+    "shadows": [
+      {
+        "name": "toast",
+        "value": "0 8px 24px #0005",
+        "purpose": "Fixed confirmation toast only."
+      },
+      {
+        "name": "scene-caption",
+        "value": "0 1px 3px #14281e",
+        "purpose": "Text legibility over the 3D scene."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-background",
+        "value": "background 0.15s",
+        "purpose": "CSS button feedback; disabled by reduced motion. Live 3D rendering remains animated."
+      },
+      {
+        "name": "toast-opacity",
+        "value": "opacity 0.15s",
+        "purpose": "Polite transient confirmation; disabled by reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-scene",
+        "value": "1650px"
+      },
+      {
+        "name": "compact-scene",
+        "value": "1100px"
+      },
+      {
+        "name": "stacked-workspace-and-settings",
+        "value": "850px"
+      },
+      {
+        "name": "mobile",
+        "value": "640px"
+      },
+      {
+        "name": "recorded-observations-compact",
+        "value": "1000px"
+      },
+      {
+        "name": "recorded-observations-stacked",
+        "value": "650px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Run action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Run action for mission operation.",
+      "html": "<button class=\"ds-primary\">Launch swarm</button>",
+      "css": ".ds-primary{font:14px/1.5 \"Segoe UI\",sans-serif;border:1px solid var(--line,#30434b);border-radius:5px;min-height:36px;padding:8px 12px;color:var(--text,#e7e9e3);background:var(--panel2,#1c2d35);cursor:pointer;transition:background .15s;background:var(--accent,#eda66d);color:#24221d;border-color:var(--accent,#eda66d);font-weight:600;min-width:144px;padding:10px 14px}.ds-primary:hover{background:#2b414a}.ds-primary:focus-visible{outline:2px solid var(--blue,#9bc7db);outline-offset:4px}.ds-primary:disabled{opacity:.5;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}.ds-primary:hover{background:#f4b784}"
+    },
+    {
+      "name": "Default action",
+      "kind": "button",
+      "refersTo": "button-default",
+      "description": "Default action for mission operation.",
+      "html": "<button class=\"ds-default\">Isolate radio</button>",
+      "css": ".ds-default{font:14px/1.5 \"Segoe UI\",sans-serif;border:1px solid var(--line,#30434b);border-radius:5px;min-height:36px;padding:8px 12px;color:var(--text,#e7e9e3);background:var(--panel2,#1c2d35);cursor:pointer;transition:background .15s;}.ds-default:hover{background:#2b414a}.ds-default:focus-visible{outline:2px solid var(--blue,#9bc7db);outline-offset:4px}.ds-default:disabled{opacity:.5;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-default{transition:none}}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-default",
+      "description": "Secondary action for mission operation.",
+      "html": "<button class=\"ds-secondary\">Reset with settings</button>",
+      "css": ".ds-secondary{font:14px/1.5 \"Segoe UI\",sans-serif;border:1px solid var(--line,#30434b);border-radius:5px;min-height:36px;padding:8px 12px;color:var(--text,#e7e9e3);background:var(--panel2,#1c2d35);cursor:pointer;transition:background .15s;background:transparent;font-size:12px}.ds-secondary:hover{background:#2b414a}.ds-secondary:focus-visible{outline:2px solid var(--blue,#9bc7db);outline-offset:4px}.ds-secondary:disabled{opacity:.5;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+    },
+    {
+      "name": "Scenario field",
+      "kind": "input",
+      "description": "Labeled number input for repeatable scenario setup.",
+      "html": "<label class=\"ds-field\">Scenario seed<input type=\"number\" value=\"41\" min=\"0\" max=\"1000000\"></label>",
+      "css": ".ds-field{display:block;width:180px;color:var(--muted,#a2b6bd);font:12px \"Segoe UI\",sans-serif}.ds-field input{display:block;margin-top:5px;width:100%;border:1px solid #3d515b;border-radius:4px;background:#111e25;color:var(--text,#e7e9e3);min-height:34px;padding:5px 8px;font:14px \"Segoe UI\",sans-serif}.ds-field input:focus-visible{outline:2px solid var(--blue,#9bc7db);outline-offset:4px}"
+    },
+    {
+      "name": "Aircraft navigation",
+      "kind": "nav",
+      "description": "Persistent fleet selection for inspecting local knowledge.",
+      "html": "<nav class=\"ds-fleet\" aria-label=\"Aircraft\"><button aria-pressed=\"true\">E01</button><button aria-pressed=\"false\">E02</button><button aria-pressed=\"false\">E03</button></nav>",
+      "css": ".ds-fleet{display:flex;gap:6px}.ds-fleet button{font:14px/1.5 \"Segoe UI\",sans-serif;border:1px solid var(--line,#30434b);border-radius:5px;min-height:36px;padding:8px 12px;color:var(--text,#e7e9e3);background:var(--panel2,#1c2d35);cursor:pointer;transition:background .15s;font:12px Consolas,monospace;min-width:52px;padding:7px 5px}.ds-fleet button[aria-pressed=\"true\"]{background:#35464b;border-color:var(--blue,#9bc7db);color:#d4ebf1}.ds-fleet button:hover{background:#2b414a}.ds-fleet button:focus-visible{outline:2px solid var(--blue,#9bc7db);outline-offset:4px}"
+    },
+    {
+      "name": "Task tag",
+      "kind": "chip",
+      "description": "Compact noninteractive aircraft task label.",
+      "html": "<span class=\"ds-task\">SEARCH</span>",
+      "css": ".ds-task{font:10px Consolas,monospace;color:var(--accent,#eda66d)}"
+    },
+    {
+      "name": "Ledger panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat evidence panel with a divided header and muted explanatory text.",
+      "html": "<section class=\"ds-panel\"><header><h2>Incident ledger</h2><span>0</span></header><p>E01’s local knowledge. Updated by its sensors and delivered reports.</p></section>",
+      "css": ".ds-panel{width:285px;background:var(--panel,#17252d);color:var(--text,#e7e9e3)}.ds-panel header{display:flex;align-items:center;justify-content:space-between;padding:12px 15px;border-bottom:1px solid var(--line,#30434b)}.ds-panel h2{margin:0;font:600 19px Rajdhani,sans-serif}.ds-panel header span{background:#2b3e46;border-radius:4px;min-width:22px;text-align:center;padding:3px;font:11px \"Segoe UI\",sans-serif;color:var(--muted,#a2b6bd)}.ds-panel p{margin:0;padding:14px 15px;color:var(--muted,#a2b6bd);font:11px/1.6 \"Segoe UI\",sans-serif}"
+    },
+    {
+      "name": "Scene camera navigation",
+      "kind": "nav",
+      "description": "Overview, Follow drone and Scene POV switch presentation cameras; Scene POV is separate from model RGB/IR inputs.",
+      "html": "<nav class=\"ds-cameras\" aria-label=\"Scene camera\"><button aria-pressed=\"false\">Overview</button><button aria-pressed=\"true\">Follow drone</button><button aria-pressed=\"false\">Scene POV</button></nav>",
+      "css": ".ds-cameras{display:flex;gap:4px}.ds-cameras button{font:11px \"Segoe UI\",sans-serif;min-height:29px;padding:5px 9px;background:transparent;color:var(--text,#e7e9e3);border:1px solid var(--line,#30434b);border-radius:5px;cursor:pointer}.ds-cameras button[aria-pressed=\"true\"]{background:#33484e;color:#f2dab9;border-color:#79969a}.ds-cameras button:hover{background:#2b414a}.ds-cameras button:focus-visible{outline:2px solid var(--blue,#9bc7db);outline-offset:4px}"
+    },
+    {
+      "name": "Scene focus action",
+      "kind": "button",
+      "description": "Enlarges the live scene and hides secondary instrumentation; Escape exits focus.",
+      "html": "<button class=\"ds-focus\">Focus view</button>",
+      "css": ".ds-focus{min-height:26px;padding:3px 8px;background:#19302ad9;color:#ecf0e1;border:1px solid #9aae9d66;border-radius:5px;font:10px \"Segoe UI\",sans-serif;cursor:pointer}.ds-focus:hover{background:#2b414a}.ds-focus:focus-visible{outline:2px solid var(--blue,#9bc7db);outline-offset:4px}"
+    },
+    {
+      "name": "Project views",
+      "kind": "nav",
+      "description": "Separates the interactive simulation from recorded RGB/thermal evidence review.",
+      "html": "<nav class=\"ds-views\" aria-label=\"Project views\"><a href=\"/\">Interactive swarm</a><a href=\"/perception\" aria-current=\"page\">Recorded observations</a></nav>",
+      "css": ".ds-views{display:flex;gap:24px}.ds-views a{font:13px \"Segoe UI\",sans-serif;color:var(--muted,#a2b6bd);padding:10px 0;text-decoration:none}.ds-views a[aria-current]{color:var(--text,#e7e9e3);border-bottom:2px solid var(--accent,#eda66d)}.ds-views a:hover{color:var(--accent,#eda66d)}.ds-views a:focus-visible{outline:2px solid var(--blue,#9bc7db);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Swarm Field Lab",
+    "overview": "A live, recognizable forest scene leads the interactive experience; slate instrumentation supports operation and evidence inspection. Detailed suppression quadrotors, conifers, terrain, field-station structures, people, fire, smoke and water make the simulation readable in space. Optional native Rerun supplies telemetry/replay, using Mesh3D arrays decoded from the same GLBs. Rerun's website examples remain the user's visual quality reference. The separate recorded-observations page lets real RGB and thermal imagery lead an evidence review using the same instrument vocabulary.",
+    "keyCharacteristics": [
+      "Detailed authored geometry, physical lighting, shadows and atmospheric depth.",
+      "Tonal panels, fine dividers, restrained copper actions, and a settings drawer.",
+      "Condensed headings, familiar body text, and monospaced telemetry.",
+      "Persistent aircraft selection and clearly labeled local knowledge.",
+      "Side-by-side source observations, explicit detection errors and inspectable provenance."
+    ],
+    "rules": [
+      {
+        "name": "The State Redundancy Rule",
+        "section": "colors",
+        "body": "Pair color with labels, identifiers, outlines, or pressed state; selection and operational meaning must remain explicit."
+      },
+      {
+        "name": "The Evidence Boundary Rule",
+        "section": "components",
+        "body": "Keep simulator truth, selected-aircraft reports, and model inputs visibly distinct. MODEL RGB INPUT and MODEL IR INPUT thumbnails show the procedural images consumed by the current CNN; Scene POV does not. Fire/smoke are visual models, and water appears only for recorded simulated discharge. Shared GLBs improve Rerun's geometry without turning presentation quality into real-data perception evidence."
+      }
+    ],
+    "dos": [
+      "**Do** preserve distinct simulator-truth and selected-aircraft knowledge labels.",
+      "**Do** keep units, timestamps, acknowledgment wording, and synthetic camera captions visible.",
+      "**Do** preserve persistent selection, keyboard focus, and narrow-screen wrapping.",
+      "**Do** keep recognizable scene geometry and usable overview/follow/POV framing central.",
+      "**Do** retain source labels, raw capture dates, clock warnings, modality labels and benchmark limitations on recorded observations."
+    ],
+    "donts": [
+      "**Don't** introduce dashboard decoration that competes with task controls or evidence.",
+      "**Don't** present estimated resources, learned decisions, or people reached as guarantees.",
+      "**Don't** imply the 3D scene camera feeds the CNN or that FLAME 3 training is implemented.",
+      "**Don't** present smoke warnings as successful flame detection or independent frames as a verified flight timeline."
+    ]
+  }
+}

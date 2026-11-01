@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embernet"
+version = "0.1.0"
+description = "Decentralized wildfire response: simulation, learning and inspectable decisions"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.2,<3", "pillow>=11,<13", "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "rerun-sdk>=0.29,<0.30"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.28,<1", "ruff>=0.12,<1"]
+learning = ["torch>=2.7,<3", "modal>=1,<2"]
+perception = ["onnxruntime>=1.20,<2"]
+model-tools = ["ultralytics>=8.3,<9", "onnx>=1.17,<2"]
+cloud = ["modal>=1,<2", "pymavlink==2.4.49", "websockets==15.0.1"]
+media = ["higgsfield-client>=0.2,<0.3", "python-dotenv>=1,<2"]
+
+[project.scripts]
+embernet = "embernet.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["embernet*"]
+
+[tool.setuptools.package-data]
+embernet = ["ui/*", "ui/fonts/*", "ui/vendor/*", "ui/vendor/addons/controls/*", "ui/vendor/addons/loaders/*", "ui/vendor/addons/utils/*", "assets/*.glb", "assets/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+cache_dir = ".cache/embernet-pytest"
+
+[tool.ruff]
+line-length = 110

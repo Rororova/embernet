@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EMBERNET Swarm</title>
+    <link rel="stylesheet" href="/ui/cloud.css?v=7">
+    <script src="/ui/cloud.js?v=7" defer></script>
+  </head>
+  <body>
+    <main class="viewport" id="viewport" aria-label="Live simulation">
+      <img id="feed" src="/ui/cloud-preview.jpg" alt="Recorded NVIDIA city preview; live frames appear after launch">
+      <div id="fire-placement" class="fire-placement" hidden aria-hidden="true"></div>
+      <div class="ir-view" id="ir-view" hidden><img id="ir-feed" alt="Live synthetic thermal infrared view"><span>IR SIM · UNCALIBRATED</span></div>
+      <div class="empty" id="waiting"><h2 id="waiting-title">Simulation is offline</h2><p id="waiting-help">Unlock with your control code to launch. Spectators can watch after a controller starts the shared swarm.</p></div>
+    </main>
+    <header class="toolbar" aria-label="Simulation controls">
+      <a class="wordmark" href="/" aria-label="EMBERNET home">EMBERNET</a>
+      <span id="phase" role="status">Connecting to host…</span>
+      <div class="tools">
+        <label>World<select id="world"><option value="city">City</option><option value="wildland">Wildland</option></select></label>
+        <button id="start" class="primary" hidden>Start</button>
+        <label>View<select id="quick-view" class="control"><option value="mission">Mission</option><option value="bird">Bird’s-eye</option><option value="overview">Overview</option><option value="fire">Fire</option><option value="follow">Follow</option><option value="onboard">Onboard</option></select></label>
+        <label>Drone<select id="camera-drone"><option>E01</option><option selected>E02</option></select></label>
+        <span class="divider"></span>
+        <button id="ignite" class="control" aria-pressed="false" aria-describedby="ignite-hint" title="Place a fire by clicking the live city" disabled>Add fire</button>
+        <label>Size<input id="ignite-radius" type="range" min="1" max="10" value="4" aria-label="Fire radius in metres"></label>
+        <label>Heat<input id="ignite-severity" type="range" min="10" max="100" value="60" aria-label="Fire severity"></label>
+        <span class="divider"></span>
+        <button id="pause" class="control" disabled>Pause</button>
+        <button id="stop" class="control danger" disabled>End</button>
+        <button id="panels" aria-expanded="false" aria-controls="drawer">Panels</button>
+      </div>
+    </header>
+    <div class="hud" aria-label="Session telemetry">
+      <span>Sim <b id="simtime">—</b></span><span>Left <b id="remaining">—</b></span><span>Mesh <b id="radio">—</b></span><span><b id="stream-status">—</b></span><span id="feed-label">Recorded preview · offline</span><span id="feed-status">Waiting for a shared session</span>
+    </div>
+    <p class="ignite-hint" id="ignite-hint" role="status" hidden>Click or tap the ground or a building to place a fire. Press Escape to cancel.</p>
+    <aside id="drawer" aria-label="Swarm panels" hidden>
+      <section class="access"><div class="section-head"><h2>Room access</h2><span id="role">Spectator</span></div><form id="unlock"><label for="code">Control code</label><div class="inline"><input id="code" type="password" autocomplete="off" maxlength="64" placeholder="From your private invite"><button>Unlock</button></div></form><p id="access-note">Anyone with the watch link can observe.</p><button id="share">Copy watch link</button></section>
+      <section><h2>Decision log</h2><ol id="events" class="log"><li>Reports and mission decisions will appear during the shared session.</li></ol></section>
+      <section><h2>Aircraft</h2><div id="aircraft" class="aircraft"><p class="muted">Aircraft initialize when Isaac starts.</p></div></section>
+      <section><div class="section-head"><h2>What the swarm believes</h2><span id="report-count">0 incidents</span></div><div id="incidents"><p class="muted">No aircraft has detected anything yet.</p></div></section>
+      <section><div class="section-head"><h2>World truth</h2><span>Observer only</span></div><div id="world-fires"><p class="muted">Aircraft never read this panel.</p></div></section>
+      <section><div class="section-head"><h2>Mesh</h2><span id="mesh-summary">Waiting for radio state</span></div><svg id="mesh-graph" viewBox="0 0 360 170" role="img" aria-label="Swarm mesh links"></svg><ol id="mesh-activity" class="log"><li>Delivered, forwarded, lost and isolated links will react here.</li></ol></section>
+      <section><h2>Radio fault</h2><div class="inline"><label class="grow">Aircraft<select id="mesh-drone"><option>E01</option><option selected>E02</option></select></label><button id="mesh" class="control" disabled>Isolate link</button></div></section>
+      <section>
+        <h2>Add a fire or survivor by position</h2>
+        <form id="report-form">
+          <label>Type<select id="kind"><option value="fire">Fire</option><option value="person">Survivor evidence</option></select></label>
+          <div class="two"><label>East (8–232 m)<input id="east" type="number" min="8" max="232" value="90" required></label><label>North (8–232 m)<input id="north" type="number" min="8" max="232" value="90" required></label></div>
+          <div class="two"><label>Height (0–140 m)<input id="altitude" type="number" min="0" max="140" step="0.1" value="1" required></label><label>Radius (1–10 m)<input id="radius" type="number" min="1" max="10" value="6" required></label></div>
+          <label class="range">Severity <output id="severity-output">60%</output><input id="severity" type="range" min="10" max="100" value="60"></label>
+          <button class="primary control" disabled>Add to world</button>
+        </form>
+      </section>
+      <section><p class="muted" id="data-status" role="status">Waiting for measured aircraft state</p><p class="scope" id="scope">Isaac Sim · PX4 SITL · PhysX aircraft. Incidents are discovered by a labeled simulated range and line-of-sight sensor, not neural perception. Suppression is virtual: scenario capacity changes a scenario fire model; no payload exists and no physical release is possible. Fire/smoke are animated effects, not combustion physics. IR is uncalibrated. Rings and labels are drawn at measured PhysX poses. Aircraft shells are drawn at 3× scale for visibility; flight physics use the unscaled 1.5 kg airframe.</p></section>
+    </aside>
+    <div id="notice" role="status" aria-live="polite"></div>
+  </body>
+</html>

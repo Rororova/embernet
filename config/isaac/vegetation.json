@@ -1,0 +1,83 @@
+{
+  "source_root": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Vegetation/Trees/",
+  "license": "User-accepted NVIDIA Omniverse and Isaac additional materials terms; fetched separately, excluded from project archive",
+  "recorded_date": "2026-10-31",
+  "meters_per_source_unit": 0.01,
+  "files": [
+    {
+      "path": "Black_Oak.usd",
+      "bytes": 10573612,
+      "sha256": "d580a33b690ded5c3da1efc2f29674eba6234f697a7b50981e674a057f580115"
+    },
+    {
+      "path": "materials/Shumard_Oak_leaf_Mat2.mdl",
+      "bytes": 1501,
+      "sha256": "0f28a7aeba996017b30817fe3504a3670eaaa02caaa09549749796f98b2a986b"
+    },
+    {
+      "path": "materials/Shumard_Oak_leaf_v2_Mat2.mdl",
+      "bytes": 1504,
+      "sha256": "d956d911aeb3a13b3e7cc5d27d5715245f567ae0c6bd4f4f59df11d0f1d943bc"
+    },
+    {
+      "path": "materials/Shumard_Oak_leaf_v3_Mat2.mdl",
+      "bytes": 1504,
+      "sha256": "45f662ab26dcef72da6ecc6f3abb47dd4c229700c02bfa1cf86818f63b523a64"
+    },
+    {
+      "path": "materials/Shumard_Oak_leaf_v4_Mat2.mdl",
+      "bytes": 1504,
+      "sha256": "18d52949a12a1ad78eb9e911c1dab3b26bcc06625764703e569980fbcab0ce56"
+    },
+    {
+      "path": "materials/textures/alter49_tree7_basecolor.png",
+      "bytes": 5578209,
+      "sha256": "db12cfe1e22827d53b1211d4bb5de0a82b774cc37e73c614116627d9f278e199"
+    },
+    {
+      "path": "materials/textures/alter49_tree7_normal.png",
+      "bytes": 7807184,
+      "sha256": "9367e64b1b51e59d58702b9d91c61bd25789640193d0c3fc518ea511156f9356"
+    },
+    {
+      "path": "materials/textures/alter49_tree7_roughness.png",
+      "bytes": 1755799,
+      "sha256": "851deda558f83dd8cc0e371f025ab041dcb109ac8dcdaee0e13b2a04715b72ec"
+    },
+    {
+      "path": "materials/textures/oakleaves1_basecolor.png",
+      "bytes": 1781096,
+      "sha256": "e14102ee1c58d950227ef6e53e079fa6d562d473131287f867e4d61cb790ca2e"
+    },
+    {
+      "path": "materials/textures/oakleaves1_normal.png",
+      "bytes": 2703716,
+      "sha256": "c43eeaee4b3c8b097d4de30a1fb5227e6338612f52e21ac7f703d8a65c74ae63"
+    },
+    {
+      "path": "materials/textures/oakleaves1_roughness.png",
+      "bytes": 1604229,
+      "sha256": "b2ed6203e5883eb6871cea973e10e733ac95340ba09dccb7b0c4e26eb96b01fc"
+    },
+    {
+      "path": "materials/textures/oakleaves2_basecolor.png",
+      "bytes": 1097596,
+      "sha256": "38e8dbede80d3a4e279e83d96e65d087cf7749811e17ec710c6359928355621e"
+    },
+    {
+      "path": "materials/textures/oakleaves3_basecolor.png",
+      "bytes": 1104163,
+      "sha256": "fe7fa62d4a84f064b151d5d414f3e8fbd5b205314c5bb44e4d462e413d1485c8"
+    },
+    {
+      "path": "materials/textures/oakleaves4_basecolor.png",
+      "bytes": 1068168,
+      "sha256": "84edce4ac23ffc81d4aa89b36c550172e9af8f0d840b044927f1362dd349c233"
+    },
+    {
+      "path": "materials/TreeBark_07.mdl",
+      "bytes": 1500,
+      "sha256": "e461858c3173d382eff8a8d8c0623c1675dc32521e0e7bc8c9c81bd30b3990fa"
+    }
+  ]
+}

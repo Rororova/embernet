@@ -1,0 +1,972 @@
+{
+ "source_root": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/",
+ "license": "User-accepted NVIDIA Omniverse and Isaac additional materials terms; fetched separately, excluded from project archive",
+ "recorded_date": "2026-11-01",
+ "meters_per_source_unit": 0.01,
+ "unresolved": [
+  "Vegetation/Plant_Tropical/OmniPBR.mdl",
+  "Vegetation/Rocks/OmniPBR.mdl"
+ ],
+ "files": [
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Dirt/Dirt_BaseColor.png",
+   "bytes": 8633821,
+   "sha256": "69876f8b4c5b60b1353fced4b09f3af2becd69d1fd9ca8527df3ad24882ad56e"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Dirt/Dirt_Normal.png",
+   "bytes": 9687234,
+   "sha256": "be22c501863a068529fd4aa284c4b6eaa61167a9e541161ea2441ad706edff02"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Dirt/Dirt_ORM.png",
+   "bytes": 3325544,
+   "sha256": "ddf5e63987de2f2f8ab81c9decfc2623d3af4e084ed1761384d0da82138b3d97"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Grass_Countryside/Grass_Countryside_BaseColor.png",
+   "bytes": 6279031,
+   "sha256": "9a3e1188aba15180d8b46d4bb7673f1ad36704f8ab68739d9774e7cff7da17c0"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Grass_Countryside/Grass_Countryside_Normal.png",
+   "bytes": 5981151,
+   "sha256": "26e20bd93b3caa3cb7ca9653137fe3e8166bbd55359584f3aec2b505dcc1bbd3"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Grass_Countryside/Grass_Countryside_ORM.png",
+   "bytes": 2328727,
+   "sha256": "78a299b2f5806c48d14ca0978fe45e5009e3dbea1507a11f8d463d509e32492f"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Leaves/Leaves_BaseColor.png",
+   "bytes": 10853252,
+   "sha256": "d25dfe5253991b075c6ffe974daae900d4b7c362ee0363aa46460270195094a3"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Leaves/Leaves_N.png",
+   "bytes": 9113753,
+   "sha256": "3f19ee84f97254da4d224b9a39931a7baac139e0ba3ffd26331158bf4b0334c5"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Leaves/Leaves_ORM.png",
+   "bytes": 6392544,
+   "sha256": "e09f83d2be0f6c11c34666b1f71afc570570cfd9a5fc0650c610a9c22243e83b"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Mulch_Brown/Mulch_Brown_N.png",
+   "bytes": 9499587,
+   "sha256": "673859101a3aaacf66efafcc1afdf1794c2b8a7f573af9fae2bdccab0f0b44f2"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Mulch_Brown/Mulch_Brown_ORM.png",
+   "bytes": 7327999,
+   "sha256": "7e9645b03433e70d175fea744815ec6074fd3d2055f1ea9f6871b53d9b8fbf66"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Mulch_Brown/Mulch_Brown_baseColor.png",
+   "bytes": 10934259,
+   "sha256": "070305c5b0f81a2ee28e82a536394291af31fd13a9113e1740b55a8becd8942d"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Soil_Rocky/Soil_Rocky_BaseColor.png",
+   "bytes": 9787123,
+   "sha256": "93846ebc6f02fd783ba68ea114cfd4619bfc0105e4fa9c2262cb8ba8ce498f6a"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Soil_Rocky/Soil_Rocky_N.png",
+   "bytes": 10394557,
+   "sha256": "77cb861d387d2afe2f59e3917640a1ecfe8649971c7d9e932a0665f8f9f50cd6"
+  },
+  {
+   "path": "Isaac/6.2/NVIDIA/Materials/Base/Natural/Soil_Rocky/Soil_Rocky_ORM.png",
+   "bytes": 7299836,
+   "sha256": "1f674923a8a431a434fc5ab8456a6d420120c99affe4d98afbc6572ca361eade"
+  },
+  {
+   "path": "Particles/textures/fire_chaos3.png",
+   "bytes": 2606175,
+   "sha256": "f89112988ff3f59eed28795b402abd2effc2d9e6111291ff82bcb150814d9b9a"
+  },
+  {
+   "path": "Particles/textures/smoke_wisp.png",
+   "bytes": 4569708,
+   "sha256": "9fe7813a67397c08a6d8c78874f6b97b3d5b8e5a06c0cc3d9215cd8672d4f605"
+  },
+  {
+   "path": "Skies/Clear/evening_road_01_4k.hdr",
+   "bytes": 25365606,
+   "sha256": "35fb4a0a1beab5322d924f1840447689dab41aefc2b081fe250297a1e1e34313"
+  },
+  {
+   "path": "Skies/Clear/noon_grass_4k.hdr",
+   "bytes": 25306463,
+   "sha256": "394859fe31e374233f44260f8c09137a47b34e0bffd420237a0baa82ca640583"
+  },
+  {
+   "path": "Skies/Cloudy/kloofendal_48d_partly_cloudy_4k.hdr",
+   "bytes": 25820705,
+   "sha256": "c656b652aba1915cd0c27faad7be256b6f2796eb711cef6a2aadc18dd80a4187"
+  },
+  {
+   "path": "Vegetation/Debris/fallcluster1.usd",
+   "bytes": 507583,
+   "sha256": "877b77e4b4427211ab8acbde9a6a27640660c3845284a1e1bf793c26071c44cd"
+  },
+  {
+   "path": "Vegetation/Debris/fallcluster2.usd",
+   "bytes": 181345,
+   "sha256": "aee8f1ee454ea8abd3a3e1abd94b89e87a6f2c712f6b49fa2888f7a15236f44e"
+  },
+  {
+   "path": "Vegetation/Debris/materials/fallleaves.mdl",
+   "bytes": 2074,
+   "sha256": "06c1f6823acb6242ee16bd77db948428e17d13f56e8d41ad1f4a0ec4fc6aa8e4"
+  },
+  {
+   "path": "Vegetation/Debris/materials/textures/deadleaves_1_Normal.png",
+   "bytes": 47284677,
+   "sha256": "ef391e4802e0fe558d6e9f48080153d48d2517b32b1cca916b5333e4f95e036a"
+  },
+  {
+   "path": "Vegetation/Debris/materials/textures/deadleaves_1_Roughness.png",
+   "bytes": 16276073,
+   "sha256": "94727ed417362e06bb93d77dd77ec6874ab4ff04a7f2474e809a8cd8cc15251b"
+  },
+  {
+   "path": "Vegetation/Debris/materials/textures/fallleaves_1_BaseColor.png",
+   "bytes": 2867684,
+   "sha256": "0baa07eb760facc36dcb6afa304560bb0dee0258967fba736dd73d888e058aa9"
+  },
+  {
+   "path": "Vegetation/Leaves/basecolor.png",
+   "bytes": 776243,
+   "sha256": "524fa6f0551e14ebf91409f72ef21832edebf2cf75c778748b6702e59fb80573"
+  },
+  {
+   "path": "Vegetation/Leaves/cluster_1.usd",
+   "bytes": 501667,
+   "sha256": "6ca4713542b7f4bbce6951bc295ab19c0489e4dcad22f542c57e21eac53ca96e"
+  },
+  {
+   "path": "Vegetation/Leaves/material.mdl",
+   "bytes": 2070,
+   "sha256": "2ad1275a1bd1d88faae7463442c5b40cee65373da70fbb6bd0bc48b0f9876b29"
+  },
+  {
+   "path": "Vegetation/Leaves/normal.jpg",
+   "bytes": 12404,
+   "sha256": "8703d4efc396072a1be811320b10a259d725b1b3d9b21305ddda0bc22d003525"
+  },
+  {
+   "path": "Vegetation/Leaves/normal.png",
+   "bytes": 959416,
+   "sha256": "76c2f22961e778533aa7cc593ad393f5f128e5609df606859f824efcc2c65f13"
+  },
+  {
+   "path": "Vegetation/Leaves/roughness.jpg",
+   "bytes": 3659,
+   "sha256": "c46327a75455cadf57d59159e94e72829f10ad41851252ea47ae0d9f8fe48855"
+  },
+  {
+   "path": "Vegetation/Leaves/roughness.png",
+   "bytes": 291451,
+   "sha256": "2ebf59cf5c3ceb2b65d28d6797c90fe05757b261ce113cd86a5c0852736b3b9b"
+  },
+  {
+   "path": "Vegetation/Plant_Tropical/Japanese_Painted_Fern.usd",
+   "bytes": 19062874,
+   "sha256": "937e6c7cbb69a49b8b60441e32fb42aa2ce5a8cf5da927e03f9ae3656239ea14"
+  },
+  {
+   "path": "Vegetation/Plant_Tropical/materials/textures/japanesefern_leaf_BaseColor.png",
+   "bytes": 2452950,
+   "sha256": "44f89f30699c1ec2fc0df242540ded9f4c3692897bed4748e3d1d06f659d986b"
+  },
+  {
+   "path": "Vegetation/Plant_Tropical/materials/textures/japanesefern_leaf_Normal.png",
+   "bytes": 3937585,
+   "sha256": "118e1fa70df6d74d8ffab5a9f8a5c1f03babd824f84e0adfbb0d5e49a09f0d29"
+  },
+  {
+   "path": "Vegetation/Plant_Tropical/materials/textures/japanesefern_leaf_Roughness.png",
+   "bytes": 943271,
+   "sha256": "130e63607a384b2f1d907c928052bf9239fe581deb40df9dbcff80d8303e1c91"
+  },
+  {
+   "path": "Vegetation/Plant_Tropical/materials/textures/japanesefern_stalk_BaseColor.png",
+   "bytes": 1143444,
+   "sha256": "45b7b6a037f89904788faeba87193301b040c93e8df7a036df8e3d1cabc2d7ff"
+  },
+  {
+   "path": "Vegetation/Plant_Tropical/materials/textures/japanesefern_stalk_Normal.png",
+   "bytes": 694591,
+   "sha256": "1822be8d919be7df1855926e6a337e0b16554cdacde6166beb7b245cff345c2d"
+  },
+  {
+   "path": "Vegetation/Plant_Tropical/materials/textures/japanesefern_stalk_Roughness.png",
+   "bytes": 363508,
+   "sha256": "852a8f33622f27141a9732c7a3b39665dec0327e5d2cbd76d6cfab666fc939cd"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_01.usda",
+   "bytes": 42436,
+   "sha256": "c179058e0600c0fe3dabcbb6ac5bb3bd5cc59496e120af798c2d15f8fd143db2"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_02.usda",
+   "bytes": 67504,
+   "sha256": "9b952d4c77af5607b69be874a1c8e26c758826295be790fee0b5119880f07ac0"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_03.usda",
+   "bytes": 63586,
+   "sha256": "35a67399399b6a919b6072c51e19b6a8915fb4ce240a3025f9b3b8782751b371"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_04.usda",
+   "bytes": 56804,
+   "sha256": "eebe5cd67c190ede49c4185bc1a1ebe44c0aa029ab3a8fe54589b9f1cbe5cfe8"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_05.usda",
+   "bytes": 70473,
+   "sha256": "d25459abcb79e6216a6396547846a3adf551e6fab01c9721cb5b6d3d5754209d"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_06.usda",
+   "bytes": 58459,
+   "sha256": "d37cd9683cf0cd85729fc10b5c738e198e9f4d683b9785529f9a33fc6b9781a6"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_07.usda",
+   "bytes": 72866,
+   "sha256": "385abf60ac505fc63c5e730ed4cef54d7c71c8924494f57712aafd165c0b7dd8"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_08.usda",
+   "bytes": 65094,
+   "sha256": "6a41d3812c0f8c84e26224f59beced184b70c27b0bd12d6fb64117306b9bf82e"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_09.usda",
+   "bytes": 63140,
+   "sha256": "c20d29a6bfd9bbd8a8a7e2cfce231b3e3e466567f011764c49c087d47e45cf38"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_10.usda",
+   "bytes": 56494,
+   "sha256": "40f8869419bc2b3b3a125958ada635749f5352aef841fad8d12d7f3e5d7e39b5"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_11.usda",
+   "bytes": 64726,
+   "sha256": "e81f0ced04be3f514383dcd62f9a895e056fe8f61f7ed3ac80dad2ed243b4a5f"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_12.usda",
+   "bytes": 59255,
+   "sha256": "4c7cd4da7a2be95112db5a7eb9e78557b6376150851f39694bc3fa2a035e0dda"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_13.usda",
+   "bytes": 59056,
+   "sha256": "ffa92ba106d3ad4c0fe13755232806d6adea120a6da6a45adcb84056c4f0c9c5"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_14.usda",
+   "bytes": 63621,
+   "sha256": "d964861b1401877320c745d9368c03972a34e9c40b772f0a9de376e1b459d22f"
+  },
+  {
+   "path": "Vegetation/Rocks/rock_small_15.usda",
+   "bytes": 60614,
+   "sha256": "279278f67cb10e20b7cebf892b9374ae253046f10c9619e3d5eb1cb5f01872d4"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_01_basecolor.jpg",
+   "bytes": 72725,
+   "sha256": "5e68111c604b9088a305dbc2eacd9a22e0a68bea16531666f91c11309c7e190d"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_01_normal.jpg",
+   "bytes": 152379,
+   "sha256": "916d4bbe74efa1331f64f81c5194b9a54a7c6595421f131b8e2ee1cdee4f1f0c"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_01_orm.jpg",
+   "bytes": 97622,
+   "sha256": "96410d351dbb254855dac9bb82e9a60c42e7ea44ea350d1b89c3f963f5482a4f"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_02_basecolor.jpg",
+   "bytes": 79643,
+   "sha256": "220cecfe6d08bbaca032ef12f84fc34072b2b9e05a53dc300325a75f82b8244a"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_02_normal.jpg",
+   "bytes": 162054,
+   "sha256": "bd6a996d732c0cb69a762596b1fe0cdfb165ba7ca38068c0c8a8b30a707e6654"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_02_orm.jpg",
+   "bytes": 107626,
+   "sha256": "993b22ffdc5e37c1ae9a2e39224153543653f352af64ed0bc02b59dc6bb0514f"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_03_basecolor.jpg",
+   "bytes": 72116,
+   "sha256": "95b3bdaf4d1936174bef22da883edebc9ad817bf6f64fc0799c74e6460777505"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_03_normal.jpg",
+   "bytes": 142950,
+   "sha256": "cddce61983082d5dcd27d0ec819822383f59e67e10c391b98b12f839898cb756"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_03_orm.jpg",
+   "bytes": 94197,
+   "sha256": "714a8b29033e7f175461b5d064df51ab4059858467e17516e04e49489a135d27"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_04_basecolor.jpg",
+   "bytes": 80318,
+   "sha256": "17361bd7207faef59579ae30b71cc822bb9717c8f9831653344228b5bbe8a958"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_04_normal.jpg",
+   "bytes": 161859,
+   "sha256": "94643187d5ee46ca1e737b21313186169c007a75b0ef13abd5cc0ab6ebc97628"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_04_orm.jpg",
+   "bytes": 105725,
+   "sha256": "8af617e6cf3db7eddc67c875a7f5f5e43c3292f58e5666eac96692dbba109738"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_05_basecolor.jpg",
+   "bytes": 78939,
+   "sha256": "39f0d48909a00128a69e29da7a105a57353262499cf1a9f7afc6245d4245e403"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_05_normal.jpg",
+   "bytes": 166252,
+   "sha256": "b7ffad0f1288e4391f5f45baae2c4057e4303f891992a2b05bc92a6b5692a118"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_05_orm.jpg",
+   "bytes": 104465,
+   "sha256": "ad7fcc3dde60ca304620987ffbf076a4c2fc37735ebfcf0d9707ce046cc120ec"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_06_basecolor.jpg",
+   "bytes": 76284,
+   "sha256": "23ad23813a8006490f815f7fb861fc0fa7922d95dab284a49bddefd22558314f"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_06_normal.jpg",
+   "bytes": 162569,
+   "sha256": "eac410f5a1b3bc2cbbe5a4aba5073d45dc4d173c0f6baa6d37488092c9a285bc"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_06_orm.jpg",
+   "bytes": 99567,
+   "sha256": "e7e926d256a0ebbfdbff79307bbc558645521949d35a90aab5539e1963422753"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_07_basecolor.jpg",
+   "bytes": 76063,
+   "sha256": "aa75f001b002265cabf45d0c12e41c6b8f13b1372109c106dd887435040fe4da"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_07_normal.jpg",
+   "bytes": 158031,
+   "sha256": "ee4d68fa6702de914de180cfceecdb15434fcbc3b4f4632fb718ea8f189ba0f9"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_07_orm.jpg",
+   "bytes": 99231,
+   "sha256": "6298dda3f5ac69d5c35ef3a8214f6a4f77358f98ddeab13b64fada7eba873288"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_08_basecolor.jpg",
+   "bytes": 72030,
+   "sha256": "2596de6090c376da666176194002203352a63851d257c68510b6e24f28bb5bd0"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_08_normal.jpg",
+   "bytes": 153551,
+   "sha256": "0c025eecfe3179762285766532b2b2046bdc0a190273c8e38d2506eeda0ad6ab"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_08_orm.jpg",
+   "bytes": 96111,
+   "sha256": "4bc9153ed6f1fa6a755fc8f7eb735b8efa67d567051df138a9748639068cfd1a"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_09_basecolor.jpg",
+   "bytes": 78814,
+   "sha256": "6b330f56cce4382598c60b92072871caee896c285cb2eedf4913f9d69457f472"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_09_normal.jpg",
+   "bytes": 158971,
+   "sha256": "17ffe12f631a1546fb2b4ea0a0d3fcb99167440f290b7d1679a99c54021afac3"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_09_orm.jpg",
+   "bytes": 102395,
+   "sha256": "454bd7c824bedce66935a73e6856f8f0eae475da0869a41295ca2f37efa35c60"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_10_basecolor.jpg",
+   "bytes": 70838,
+   "sha256": "a058d4fbd1f9384fbfc23c32a8fb37e70fe3bd69795b2351b229f5c916039479"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_10_normal.jpg",
+   "bytes": 143442,
+   "sha256": "20224c77b493b1c97503d4b81d5f3e9c1c9b71ff307f1a461e7966b3c547a8fa"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_10_orm.jpg",
+   "bytes": 92386,
+   "sha256": "7775e418ee74c568f1e5b0b3326254df4605265bd643368201cf53e8576df4bb"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_11_basecolor.jpg",
+   "bytes": 78873,
+   "sha256": "40347731337ab3dcae7d6bd202c962c4664473325aa8f5b1a3e722286f8992b8"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_11_normal.jpg",
+   "bytes": 160352,
+   "sha256": "c76753b2e6efb0659c1bf93928ce8d0cc26851590ee6845d8d6108d813de8375"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_11_orm.jpg",
+   "bytes": 105549,
+   "sha256": "cd8eaf0676f8aabac9b127be2b3f916441caed633d0e7eb540381176cf6031c8"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_12_basecolor.jpg",
+   "bytes": 75720,
+   "sha256": "76a3a7ef533120047472786612caac82a009511d04b45fe93b4075011220a1b7"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_12_normal.jpg",
+   "bytes": 153318,
+   "sha256": "f0fd480b830987a1e92eebd5a36098bee4097d2eeeb877669c98af7de6070d7c"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_12_orm.jpg",
+   "bytes": 102808,
+   "sha256": "845e135d4cbc79c0297056b5a55c748fdf42cc948ff5ffd519ceeb47f7d01ea6"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_13_basecolor.jpg",
+   "bytes": 73033,
+   "sha256": "6ce350409d2b2e0d129d863ddd6bc93405a5c3bd12bd36ef284d8840e70a5b84"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_13_normal.jpg",
+   "bytes": 155770,
+   "sha256": "eaa29f59b54bb01c9c53dc618855a99503729a7b0244bc45cbd63c9a88be747b"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_13_orm.jpg",
+   "bytes": 95260,
+   "sha256": "d9c96f96ee9d4500000bd17aeef1d2cff24c0e8aa10a244d77bcbe43ab8dd0a6"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_14_basecolor.jpg",
+   "bytes": 78024,
+   "sha256": "90ae3689afaa7d8fe7942eea3110dd92b1d4f8ce47bd886caa37ac276b3dfa22"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_14_normal.jpg",
+   "bytes": 158715,
+   "sha256": "5027de5d13c7efb0f2a5f16b7ddd83a28be57d9472941d1ea73cdf71ed47bec2"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_14_orm.jpg",
+   "bytes": 103780,
+   "sha256": "541ffb251f227b3a1d1b3a1db67fecec72e0299bf7653f3f93fabab24bdd97b5"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_15_basecolor.jpg",
+   "bytes": 78402,
+   "sha256": "1eb2a8030ce029ea9298abc8eec372fa123ccf6cd0acf4a43145d20a52543cdd"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_15_normal.jpg",
+   "bytes": 159489,
+   "sha256": "785d3bdceb0be4f99dce3e5e65165962a7c2ee2964495cef9faaaac0f121695f"
+  },
+  {
+   "path": "Vegetation/Rocks/textures/rock_small_15_orm.jpg",
+   "bytes": 105516,
+   "sha256": "f3297cdaaa2bc86a21083566f38634c12045c24dd418ccf7ffad1c5dec9a6ad8"
+  },
+  {
+   "path": "Vegetation/Shrub/Barberry.usd",
+   "bytes": 793025,
+   "sha256": "eb1a11e3f6f019f6ace7e8d9f616b8bb7c3cab30c484f779edad50e7086c145a"
+  },
+  {
+   "path": "Vegetation/Shrub/Cedar_Shrub.usd",
+   "bytes": 11345391,
+   "sha256": "232cf75ae6833e278e86c35142fbcae2ddb695acdadf23b3faffd9086d840b4a"
+  },
+  {
+   "path": "Vegetation/Shrub/Fountain_Grass_Short.usd",
+   "bytes": 27516808,
+   "sha256": "2723f47adbc3a0e3c65217360c20aab735e31b16d34e8d4e736c1ae6eaf167ad"
+  },
+  {
+   "path": "Vegetation/Shrub/Grass_Short_A.usd",
+   "bytes": 2457126,
+   "sha256": "3c4da3336f8936642220e526c65167dc1c342f0fc950b9614f163c08aec5080b"
+  },
+  {
+   "path": "Vegetation/Shrub/Grass_Short_B.usd",
+   "bytes": 845898,
+   "sha256": "2c25b2bf18f72a709ef946045b4878e47581acd430e9b6883cb2084697fb7205"
+  },
+  {
+   "path": "Vegetation/Shrub/Grass_Short_C.usd",
+   "bytes": 124868,
+   "sha256": "15370ed22dada43ba4b09fe049f1180496dee6626aa8aa4b9f51bba1df89c98b"
+  },
+  {
+   "path": "Vegetation/Shrub/Juniper.usd",
+   "bytes": 29730494,
+   "sha256": "9ffb5cdc9e4509d24e1f69bada89f0d5e9e002650d93c6cb46d845a8fdbe86f4"
+  },
+  {
+   "path": "Vegetation/Shrub/Lupin.usd",
+   "bytes": 3794378,
+   "sha256": "5c1fd13a1bd338a2ef9581c5e64f235f062367ac6388fcbd51ec2b569d37d115"
+  },
+  {
+   "path": "Vegetation/Shrub/Prairie_Dropseed.usd",
+   "bytes": 40150425,
+   "sha256": "83b4080c309c8852173c5d630abf4994c7e5ca0fa350e88a85168cd7917b21e0"
+  },
+  {
+   "path": "Vegetation/Shrub/Rhododendron.usd",
+   "bytes": 7149047,
+   "sha256": "ebf0be7989ddf6f02b5dab6e2e7c12c8533b68d3bf75df30b1576caa99785218"
+  },
+  {
+   "path": "Vegetation/Shrub/Switchgrass.usd",
+   "bytes": 1208701,
+   "sha256": "4e3805633d9ae999fc0562676cf7d82e617c45a86b70a69598f12fcf270c512c"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/Barberry_Mat.mdl",
+   "bytes": 1378,
+   "sha256": "ad40067a2254a093208c183b8a3ca3f24fd4ff33974665952d616b59c89dd403"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/FountainGrass_Mat.mdl",
+   "bytes": 1387,
+   "sha256": "dc0c650f7dbb54a5f51429fe78d99ba08bcf3720fd3ac70e328925c7a93f47c2"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/Lupin_m.mdl",
+   "bytes": 1472,
+   "sha256": "9083ea4e25ce1a33595e15c897dd57548fe10515ab3a407c10dfb78a76dcb187"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/Pampas_flower_Mat.mdl",
+   "bytes": 1377,
+   "sha256": "fc490ed0f7e579bad194cabd5005d4f9ef50647dc5b89084fa66e6f3a814ee7a"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/Rhododendron.mdl",
+   "bytes": 1498,
+   "sha256": "eeda9e9b5f3ce00a0d087ae242c052fb69d2e26d952161d0af8202ff820a45a6"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/Switchgrass_Mat.mdl",
+   "bytes": 1439,
+   "sha256": "67ce635af75e938135eaf633fb792398c358df33c9ca0bb29008fddbfdd3ba81"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/lawngrass_a_mat.mdl",
+   "bytes": 1611,
+   "sha256": "8e6d67582ab1a80c908c687ed623a81acfb1da98e0541b225f40f73b0de87a1f"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/barberry_basecolor.png",
+   "bytes": 78671,
+   "sha256": "8661392a53b4f8f6c465c33fc46ffee85dcf4f0c2c1bb4e9230815357ba2d871"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/fountaingrass_basecolor.png",
+   "bytes": 2371,
+   "sha256": "4a4947212db76bdc5731772301aef9cb5f148c4f598d5ac0799d7de610fcb0b2"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/green1_basecolor.png",
+   "bytes": 45022,
+   "sha256": "e225914025bbe913e8c24baa4cc2de3ad9b0a68e91dbb99a7c060dfd7e755e3e"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/lawngrass_a_basecolor.png",
+   "bytes": 17366119,
+   "sha256": "cb0c6e650ca82ab6f3ba3941f00b1fea547ed6a60cfcc377f33dcca52b9d7f7b"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/lawngrass_a_normal.png",
+   "bytes": 6712609,
+   "sha256": "7275ce94bd846c413cb1d02525c1ffb71c0d6d0c47279f7aed2e1319a6bc5435"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/lawngrass_a_roughness.png",
+   "bytes": 3692959,
+   "sha256": "a4989a193a460488383ea54f4d338be96ce6cb7bd50283d9a785600afbc85584"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/lupin_basecolor.png",
+   "bytes": 1970200,
+   "sha256": "d74d58978ed156ae52623907d208283b6ca64ac05be29ed5aa78c168f79eea1f"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/lupin_normal.png",
+   "bytes": 3785204,
+   "sha256": "f56426d120b27f5baa6d27c470b979facc7a28e3308e2563ca96cac1a8a5d713"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/lupin_roughness.png",
+   "bytes": 641928,
+   "sha256": "064eb13866c9b26a0e8bd3b4eb07f25f3b03e00c406b1aa414c0b592314fc633"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/pampas_flower.png",
+   "bytes": 2227,
+   "sha256": "55eb9ea7ae28d375af160f62d4cca6e9213c0ebb2b4d2131418158db7440b840"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/rhododendron_basecolor.png",
+   "bytes": 3532797,
+   "sha256": "d6a6c2dca2140ddec5d0cfd2f9d273591fb9c8bd48c1889269781654fe227944"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/rhododendron_normal.png",
+   "bytes": 2333247,
+   "sha256": "5f883d822cbedc6eba66110a02a0cc838b5d60ff9a84683ea7bf44d2219a1266"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/rhododendron_roughness.png",
+   "bytes": 1489656,
+   "sha256": "22cde8cf3dc94a2c3886a1453fd976bb6cf432ea56cd2a2add7f3024ebba94ba"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/switchgrass_basecolor.png",
+   "bytes": 466786,
+   "sha256": "f6d6996f45392a9f0819cbe25cf886f3bf39bd4bb88207270472a6a91d79b1eb"
+  },
+  {
+   "path": "Vegetation/Shrub/materials/textures/switchgrass_normal.png",
+   "bytes": 4429,
+   "sha256": "a5e266a70bbd8a434f7e8a5d08672c177c9859a4e66ac7b1f75bd3f0edc0b7c9"
+  },
+  {
+   "path": "Vegetation/Trees/Black_Oak.usd",
+   "bytes": 10573612,
+   "sha256": "d580a33b690ded5c3da1efc2f29674eba6234f697a7b50981e674a057f580115"
+  },
+  {
+   "path": "Vegetation/Trees/Colorado_Spruce.usd",
+   "bytes": 14472714,
+   "sha256": "36960f7b59929aa9f3d3896cd9b68a20867e78437bc230b5dc9e6d10a64113ff"
+  },
+  {
+   "path": "Vegetation/Trees/Douglas_Fir.usd",
+   "bytes": 3618827,
+   "sha256": "9bf53113eabd480ee6b880b0204ce288082b26b15efeb961cb2ac7c6fda90d46"
+  },
+  {
+   "path": "Vegetation/Trees/Largetooth_Aspen.usd",
+   "bytes": 29514841,
+   "sha256": "c0f43fd0afcca0eb6ec499bb01b4b481a4123ddcc5891f27ec4374fd6a35872a"
+  },
+  {
+   "path": "Vegetation/Trees/Red_Cedar.usd",
+   "bytes": 30647322,
+   "sha256": "08465526d5ef68cb9d326aaaea331d797c458a2bc19b1898b7245035ade1c243"
+  },
+  {
+   "path": "Vegetation/Trees/White_Pine.usd",
+   "bytes": 848395,
+   "sha256": "0ab136840adab6383dea32dbe301705080f344562e1d18014d4b967c920d3762"
+  },
+  {
+   "path": "Vegetation/Trees/Yellow_Pine.usd",
+   "bytes": 15938510,
+   "sha256": "b1afccfe8edd5e3a066cb8baff049c9ca68c151cd4efe1f574b6872dd8a60e1f"
+  },
+  {
+   "path": "Vegetation/Trees/materials/Aspen_leaf_Mat.mdl",
+   "bytes": 1491,
+   "sha256": "c691d132ecb7d8c1ddfb045627cd1a7ae3955d916038fba97b68a7622aa5cd98"
+  },
+  {
+   "path": "Vegetation/Trees/materials/Pine_needles.mdl",
+   "bytes": 1371,
+   "sha256": "8a4ea38a1b2eebadef90a8f22ef841aa3416617e445ff0b0aaa582a9caa2c895"
+  },
+  {
+   "path": "Vegetation/Trees/materials/Shumard_Oak_leaf_Mat2.mdl",
+   "bytes": 1501,
+   "sha256": "0f28a7aeba996017b30817fe3504a3670eaaa02caaa09549749796f98b2a986b"
+  },
+  {
+   "path": "Vegetation/Trees/materials/Shumard_Oak_leaf_v2_Mat2.mdl",
+   "bytes": 1504,
+   "sha256": "d956d911aeb3a13b3e7cc5d27d5715245f567ae0c6bd4f4f59df11d0f1d943bc"
+  },
+  {
+   "path": "Vegetation/Trees/materials/Shumard_Oak_leaf_v3_Mat2.mdl",
+   "bytes": 1504,
+   "sha256": "45f662ab26dcef72da6ecc6f3abb47dd4c229700c02bfa1cf86818f63b523a64"
+  },
+  {
+   "path": "Vegetation/Trees/materials/Shumard_Oak_leaf_v4_Mat2.mdl",
+   "bytes": 1504,
+   "sha256": "18d52949a12a1ad78eb9e911c1dab3b26bcc06625764703e569980fbcab0ce56"
+  },
+  {
+   "path": "Vegetation/Trees/materials/Spruce_needles.mdl",
+   "bytes": 1375,
+   "sha256": "88a29b0c5db6b0177c862eef3259a66376156ff4186cafaec4dffa45311564e4"
+  },
+  {
+   "path": "Vegetation/Trees/materials/TreeBark_01.mdl",
+   "bytes": 1500,
+   "sha256": "ba910c3b322e96b860228ecb031b251adb96342de80ae2af713ed3eab8da02ba"
+  },
+  {
+   "path": "Vegetation/Trees/materials/TreeBark_04.mdl",
+   "bytes": 1501,
+   "sha256": "b54e898ab1d18fe676379adbd26ca92b14a7c1ce5bb542752258b35942314ee8"
+  },
+  {
+   "path": "Vegetation/Trees/materials/TreeBark_07.mdl",
+   "bytes": 1500,
+   "sha256": "e461858c3173d382eff8a8d8c0623c1675dc32521e0e7bc8c9c81bd30b3990fa"
+  },
+  {
+   "path": "Vegetation/Trees/materials/TreeBark_10.mdl",
+   "bytes": 1504,
+   "sha256": "fc5fadeba76cf4e32506a3c64cb4bc449d91090b978c31afa77074dc1287c9dd"
+  },
+  {
+   "path": "Vegetation/Trees/materials/bark3.mdl",
+   "bytes": 1471,
+   "sha256": "99bc4a876c493b90e490d078835e4a2200327bd89621074b54584ed106c67442"
+  },
+  {
+   "path": "Vegetation/Trees/materials/cedarbranches.mdl",
+   "bytes": 1968,
+   "sha256": "27a3525fcd93acb9c788d6da65885f25293ba6ff86a0b8bc38285633e0ccae21"
+  },
+  {
+   "path": "Vegetation/Trees/materials/cypress_branches.mdl",
+   "bytes": 1968,
+   "sha256": "026b5d2685ddd4284b45d721e700f57b9e354ddffbf62600da9e720018a9a3a0"
+  },
+  {
+   "path": "Vegetation/Trees/materials/pinebark1.mdl",
+   "bytes": 1860,
+   "sha256": "55ddbab70061223b83ba89fa3c317f94268c96dd44e00bfb3dbebba6629e2fbc"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree10_basecolor.png",
+   "bytes": 6259543,
+   "sha256": "954f5c8d55ca3f5d327a8cb08c4d601536f4c6a49d9e35a0fe62cd0951ea11c3"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree10_normal.png",
+   "bytes": 6495148,
+   "sha256": "f873298b1a12bb2e8b9692d943c975eb99e746b3223ea7aea538548c052d1cb6"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree10_roughness.png",
+   "bytes": 1248772,
+   "sha256": "b9a550f370837388c80a3770097e7ea14a1cf502c55996aa5195df071fbd2a95"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree1_basecolor.png",
+   "bytes": 8301537,
+   "sha256": "0a645a74a5edce02bb29151cf3ba94193dd9e05b22bd1d4be7ccfb8930705457"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree1_normal.png",
+   "bytes": 6297188,
+   "sha256": "47949063c60472d3f37db552a1da43ed00175410a14a12f25da5bade7b19ee13"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree1_roughness.png",
+   "bytes": 1824629,
+   "sha256": "1f66ce9d927027bef946e8d3eaab8a322c02343481da479c16f655121812d93b"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree4_basecolor.png",
+   "bytes": 7598407,
+   "sha256": "853de0db974a2cc42cd18e67dc15f22d8ad5a3bc7eead47d0b82cf121535a409"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree4_normal.png",
+   "bytes": 6326150,
+   "sha256": "054dd6973bd982d60eb679ea2e4469e9924d9fdc0070e2e56e734b9bef7ee80a"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree4_roughness.png",
+   "bytes": 1899719,
+   "sha256": "e2d6cfecea06e4503721e72aaace697006e20bf4f9112925e00b3bbc90da8495"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree7_basecolor.png",
+   "bytes": 5578209,
+   "sha256": "db12cfe1e22827d53b1211d4bb5de0a82b774cc37e73c614116627d9f278e199"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree7_normal.png",
+   "bytes": 7807184,
+   "sha256": "9367e64b1b51e59d58702b9d91c61bd25789640193d0c3fc518ea511156f9356"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/alter49_tree7_roughness.png",
+   "bytes": 1755799,
+   "sha256": "851deda558f83dd8cc0e371f025ab041dcb109ac8dcdaee0e13b2a04715b72ec"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/aspenleaf_basecolor.png",
+   "bytes": 626708,
+   "sha256": "1538456c323df5e57f550fe8f74131bcdb3d257e5d76541ab7e1d002f60d5db0"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/aspenleaf_normal.png",
+   "bytes": 955159,
+   "sha256": "c0f29cb710dca49e31737b54e40c66e33d6146d7b974c98cf6442711bd6ca0d1"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/aspenleaf_roughness.png",
+   "bytes": 416661,
+   "sha256": "cd959d27e0640e8eeac7cec3151ef4662fc71ccab2ca65ddeb1c518bc02dc99e"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/bark3_basecolor.png",
+   "bytes": 12895910,
+   "sha256": "ac31fed1a954d7b41830b4e6d1a97f2958fc66107a3ef809d767ef088fbc9489"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/bark3_normal.png",
+   "bytes": 12534447,
+   "sha256": "2dab62d9390ba8ff6dba827ec8a795eb036efc1b2e66d62ce2db88575ce05f1d"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/bark3_roughness.png",
+   "bytes": 3147948,
+   "sha256": "f658b87c17cffd39dd8410de511ce662a053988144b99ee81601ca2bc087f18a"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/cedar_atlas1_basecolor.png",
+   "bytes": 6443609,
+   "sha256": "a6c0c3a8fb5ccc6eb1cdbe2414fe78da91c5d1458fe03b8ba4655c215ff79444"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/cedar_atlas1_normal.png",
+   "bytes": 20049656,
+   "sha256": "45294f4e75d02a595021317ff4965020bf6a3251679c0860c53f618bafd4bc8e"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/cedar_atlas1_opacity.png",
+   "bytes": 107573,
+   "sha256": "f18731731194b55252766f8f1b7bc7967e69fab5ffb100564d0f7f6fa3c2dee6"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/cedar_atlas1_roughness.png",
+   "bytes": 11026380,
+   "sha256": "f3b2fc7411bfebf189926648764a83b9d7c8a082591b3c898047465d69059cc8"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/cedar_atlas2_basecolor.png",
+   "bytes": 2491052,
+   "sha256": "4022fb04208a18c2128c8a0993cb1ed69d323d8fe985e43aa947d9923fc71439"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/cedar_atlas2_normal.png",
+   "bytes": 7771067,
+   "sha256": "6a0d7259351c968dab9b21d8ec2017ee961c50b10199dabf572600e7ec9b2410"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/cedar_atlas2_opacity.png",
+   "bytes": 36447,
+   "sha256": "2f4ab33b2c3e83bc00229b712e7af5ab4384d81b02894d77155d63d95254c448"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/cedar_atlas2_roughness.png",
+   "bytes": 1597877,
+   "sha256": "be0b8431c8905b5653109695f94b66e462d99862e19f2af092e574cc19bd4e65"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/oakleaves1_basecolor.png",
+   "bytes": 1781096,
+   "sha256": "e14102ee1c58d950227ef6e53e079fa6d562d473131287f867e4d61cb790ca2e"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/oakleaves1_normal.png",
+   "bytes": 2703716,
+   "sha256": "c43eeaee4b3c8b097d4de30a1fb5227e6338612f52e21ac7f703d8a65c74ae63"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/oakleaves1_roughness.png",
+   "bytes": 1604229,
+   "sha256": "b2ed6203e5883eb6871cea973e10e733ac95340ba09dccb7b0c4e26eb96b01fc"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/oakleaves2_basecolor.png",
+   "bytes": 1097596,
+   "sha256": "38e8dbede80d3a4e279e83d96e65d087cf7749811e17ec710c6359928355621e"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/oakleaves3_basecolor.png",
+   "bytes": 1104163,
+   "sha256": "fe7fa62d4a84f064b151d5d414f3e8fbd5b205314c5bb44e4d462e413d1485c8"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/oakleaves4_basecolor.png",
+   "bytes": 1068168,
+   "sha256": "84edce4ac23ffc81d4aa89b36c550172e9af8f0d840b044927f1362dd349c233"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/pine_needles.png",
+   "bytes": 13393,
+   "sha256": "cf075f49a6eb78e3e1a613d95662b91e64682f3a0379af4c0a3b07bd8b750973"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/pinebark1_basecolor.png",
+   "bytes": 89876465,
+   "sha256": "a348ef6f8af83fdb78812df9d537a3bae5bba9d0c9b51109349ef9484f03b687"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/pinebark1_normal.png",
+   "bytes": 36188441,
+   "sha256": "8bd6bd50f63a74c583b1f3670a567ea2575ac3f5d98aaa4039184ad9459d726f"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/pinebark1_roughness.png",
+   "bytes": 28335925,
+   "sha256": "c8aa8409347b18300bef008716fb4b1ad7d3ba99add564e6d729c4d5d8cb5227"
+  },
+  {
+   "path": "Vegetation/Trees/materials/textures/spruce_needles.png",
+   "bytes": 8896,
+   "sha256": "da9c24ea342b6f1df9261a1222b94cad143e340ac403d8fb024d965dbdab2434"
+  }
+ ]
+}
