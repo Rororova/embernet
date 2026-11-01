@@ -2,6 +2,9 @@
 
 EMBERNET is a decentralized wildfire-response research platform with:
 
+
+#🚨🚨🚨🚨EMBERNET REQUIRES POWERFUL GPUS TO RUN IN ISSSAC SIM, PLZ DO NOT RUN IT LOCALLY IF YOU DON'T HAVE BASELINE CONFIGS, RATHER VISIT THE DEMO
+
 - a local multi-drone simulation for mission-control and coordination testing
 - inspectable autonomy decisions (memory, bids, acknowledgements, safety)
 - a separate real-image perception review flow (`/perception`)
