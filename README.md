@@ -1,35 +1,40 @@
 # EMBERNET
 
-Live wildfire-response research: a 3D drone swarm, decentralized incident memory,
-resource negotiation, trained mission decisions, and real aerial-image review.
+EMBERNET is a decentralized wildfire-response research platform with:
 
-## Run
+- a local multi-drone simulation for mission-control and coordination testing
+- inspectable autonomy decisions (memory, bids, acknowledgements, safety)
+- a separate real-image perception review flow (`/perception`)
 
-On this workstation, double-click **Start-EMBERNET.cmd**. It opens the live forest
-at http://127.0.0.1:8780 and saves Rerun recordings. **Real observations**
-opens the included FLAME 3 RGB/temperature review at http://127.0.0.1:8780/perception.
+It is built for experimentation, replay, and evidence-driven evaluation, not
+real-world suppression deployment.
 
-On a fresh Windows machine, install uv, run `Setup-EMBERNET.ps1`, then open the
-launcher. Models, scene assets and selected real-data samples are included in the
-project archive. No training or cloud account is needed to run the packaged demo.
+## Quick start (Windows)
 
-## Included
+1. Install `uv`.
+2. Run:
 
-- Recognizable quadrotors, forest/field station, fire, smoke and executed simulated
-  water release. Orbit, follow, Scene POV and Focus view. Shared GLBs in Rerun.
-- Six drones with separate local knowledge, delayed/lost mesh messages, retained
-  deferred incidents, acknowledged commitments, safe diversion and replenishment.
-- Independent safety, learned mission preferences, explicit baseline, saved replay,
-  trained checkpoints and downloaded training/container/image logs.
-- Pinned 3.01M-parameter fire/smoke detector, real-image fine-tuning on Modal,
-  local ONNX inference, 48 held-out FLAME 3 RGB/radiometric pairs and reproducible results.
+```powershell
+./Setup-EMBERNET.ps1
+Start-EMBERNET.cmd
+```
 
-The interactive simulation retains its procedural sensor prototype. Real-image
-review is separate: the completed real-data fine-tune produced fire-or-smoke
-warnings on 24/24 held-out fire samples and 0/24 no-fire samples, improved from
-three false warnings in the original baseline. Flame-only recall remains 0/24;
-all positive warnings came from smoke. Thermal agreement with folder labels is
-descriptive, not independent recognition validation.
+Then open:
+
+- Main UI: `http://127.0.0.1:8780`
+- Real perception review: `http://127.0.0.1:8780/perception`
+
+## What is included
+
+- 3D simulation with incidents, mesh faults, per-drone local state, and mission controls
+- Baseline and learned mission decision paths
+- Real-image ONNX inference and FLAME sample inspection workflow
+- Telemetry and replay outputs (Rerun + JSONL)
+- Optional cloud/Isaac/PX4 tracks documented under `context/`
+
+## CLI examples
+
+Use the project venv Python on Windows:
 
 ```powershell
 .venv-embernet/Scripts/python.exe -m embernet serve --rerun
@@ -39,33 +44,24 @@ descriptive, not independent recognition validation.
 .venv-embernet/Scripts/python.exe -m pytest -q
 ```
 
-Fire/smoke does not establish survivorship, calibrated severity or required litres.
-Person reached in simulation requires ground rescue. Hardware actuation remains
-disabled. ROS/ns-3, real flight and fire physics remain future work. PX4 SITL now drives
-Isaac PhysX motors; the shared cloud room is described in [PX4/cloud](context/PX4_CLOUD.md).
+Other supported commands include `embernet demo`, `embernet train vision|mission`,
+`embernet replay`, and `embernet control` actions.
 
-Isaac 6.2 cloud trials now run actual rotor-controlled PhysX flight, NVIDIA
-forest/props, RGB/depth cameras and the existing trained mission actor across
-three aircraft. A recorded packet outage blocks delivery and recovers after
-reconnection. The main interactive dashboard still uses the kinematic backend.
-Run `.\Run-EMBERNET-Isaac.ps1 -Mode fleet -AcceptNvidiaEula` or `-Mode flight`.
-See [Isaac setup and evidence](context/ISAAC_SIM.md) for results, videos and limits.
+## Safety and scope boundaries
 
-[Agent context](context/README.md) · [Runbook](context/RUNBOOK.md) ·
-[Real perception](context/REAL_PERCEPTION.md) · [Verification](context/VERIFICATION.md) ·
-[Third-party notices](THIRD_PARTY_NOTICES.md).
+- Physical actuation is disabled.
+- Interactive fire/smoke and many simulator signals are synthetic.
+- A simulated person reached is **not** a rescue.
+- Real-image review does not imply calibrated severity, localization, or suppression outcomes.
+- ROS/ns-3/real radios/real flight/fire physics are only valid where explicitly implemented and verified.
 
+## Key documentation
 
-The shared cloud city now uses NVIDIA architectural assets, actual PX4/PhysX
-flight and NVENC H.264 video with mouse orbit/pan/zoom. The verified run received
-23.95 fps and acknowledged a camera change in 578 ms. Fire/smoke remain stylized;
-see [current architectural evidence](context/ARCHITECTURAL_RUN.md).
-Run `.\Run-EMBERNET-Cloud.ps1` to fetch the pinned NVIDIA pack, deploy and prepare
-one 600-second session within verified free credits. The public watch page is
-https://nikhilthakuraan--embernet-live-gateway.us-east.modal.run . The private
-control invite is kept outside release archives. Preparation alone starts no GPU.
-
-The cloud room now runs a six-drone autonomous mission in the city or wildland, chosen at
-launch: simulated-sensor discovery, mesh sharing, negotiated commitments, virtual suppression
-and fresh-evidence clearance, with click-to-ignite. It uses virtual work, not real payloads;
-see [swarm mission evidence and limits](context/SWARM_MISSION.md).
+- [Agent context](context/README.md)
+- [Runbook](context/RUNBOOK.md)
+- [Status](context/STATUS.md)
+- [Real perception](context/REAL_PERCEPTION.md)
+- [Isaac setup and evidence](context/ISAAC_SIM.md)
+- [PX4/cloud path](context/PX4_CLOUD.md)
+- [Verification](context/VERIFICATION.md)
+- [Third-party notices](THIRD_PARTY_NOTICES.md)
